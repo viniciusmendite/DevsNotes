@@ -55,6 +55,14 @@ export default () => {
   const handleSaveButton = () => {
     if (title !== '' && body !== '') {
       if (status === 'edit') {
+        dispatch({
+          type: 'EDIT_NOTE',
+          payload: {
+            key: route.params.key,
+            title,
+            body,
+          },
+        });
       } else {
         dispatch({
           type: 'ADD_NOTE',
