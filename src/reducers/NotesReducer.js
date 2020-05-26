@@ -5,7 +5,7 @@ const initialState = {
 export default (state = initialState, action) => {
   let newList = [...state.list];
 
-  switch (action) {
+  switch (action.type) {
     case 'ADD_NOTE':
       newList.push({
         title: action.payload.title,
