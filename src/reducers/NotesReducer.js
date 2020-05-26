@@ -1,12 +1,18 @@
 const initialState = {
-  list: [{title: 'Primeira Nota', body: 'Testando 1, 2, 3...'}],
+  list: [],
 };
 
 export default (state = initialState, action) => {
+  let newList = [...state.list];
+
   switch (action) {
     case 'ADD_NOTE':
+      newList.push({
+        title: action.payload.title,
+        body: action.payload.body,
+      });
       break;
   }
 
-  return state;
+  return {...state, list: newList};
 };

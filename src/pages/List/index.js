@@ -16,11 +16,10 @@ import {
 
 export default () => {
   const navigation = useNavigation();
-  //const list = useSelector(state => state.notes.list);
-  const list = [];
+  const list = useSelector(state => state.notes.list);
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: 'Sua notas',
+      title: 'Suas notas',
       headerRight: () => (
         <AddButton
           underlayColor="transparent"
