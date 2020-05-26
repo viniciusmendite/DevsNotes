@@ -24,8 +24,8 @@ export const CloseButton = styled.TouchableHighlight`
 `;
 
 export const CloseButtonImage = styled.Image`
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
 `;
 export const SaveButton = styled.TouchableHighlight`
   margin-right: 15px;

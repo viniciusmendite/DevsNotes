@@ -35,6 +35,10 @@ export default () => {
   useLayoutEffect(() => {
     navigation.setOptions({
       title: status === 'new' ? 'Nova Anotação' : 'Editar Anotação',
+      headerTitleStyle: {
+        fontSize: 20,
+      },
+      headerTitleAlign: 'center',
       headerLeft: () => (
         <CloseButton onPress={handleCloseButton} underlayColor="transparent">
           <CloseButtonImage source={require('../../assets/close.png')} />
