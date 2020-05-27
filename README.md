@@ -21,8 +21,10 @@
 #### Excluir Anotação:
 
 <div style="text-align: justify">&emsp; Para essa funcionalidade utilizei o <i>Modal</i> do react native, que é acionado ao manter um toque pressionado na anotação. Nele coloquei duas ações:</div><br/>
-<div>&emsp; <b>Excluir:</b> identifico qual o index da anotação pressionada, e com isso utilizo o <b>filter()</b> para receber apenas os index que são diferentes do selecionados, e com isso a anotação vai sumir da lista, dando o efeito de exclusão. <br/>
-&emsp; <b>Cancelar:</b> apenas modifica a variável <i>modalVisible</i> para <i>false</i>.
+<div>&emsp; <b>Excluir:</b> identifico qual o index da anotação pressionada, e com isso utilizo o <b>filter()</b> para receber apenas os index que são diferentes do selecionado, e com isso a anotação vai sumir da lista, dando o efeito de exclusão. <br/>
+
+&emsp; <b>Cancelar:</b> apenas modifica a variável <i>modalVisible</i> para <i>false</i>, assim fechando o modal.
+
 </div><br/>
 
 <kbd><img src="https://github.com/viniciusmendite/PrintScreen/blob/master/devsnotes/delete-note.PNG" alt="screen" width="720" height="340" /></kbd>
